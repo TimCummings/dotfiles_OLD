@@ -2,6 +2,14 @@
 " Vim-Plug
 " ============================================================
 
+" automatically download and install vim-plug plugin manager
+" if it's not detected
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin()
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
