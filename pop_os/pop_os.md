@@ -17,3 +17,7 @@ Changes to display settings are lost on logout/reboot. Still working on this. Se
 * Gnome Tweaks
 * Gnome Shell Extensions browser extension
 * Dash to Dock extension
+* PDFMod - good for light PDF adjusting, similar to Preview
+* work printer:
+  - download driver from website as usual
+  - `sudo xeroxprtmgr` to get to Xerox-specific advanced settings and setup accounting
