@@ -6,5 +6,8 @@
 # Atom
 * ~/.atom/config.cson
 
+# Karabiner
+* ~/.config
+
 # Vim
 * ~/.vimrc
