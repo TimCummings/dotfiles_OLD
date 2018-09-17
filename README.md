@@ -9,5 +9,8 @@
 # Karabiner
 * ~/.config
 
+# Macos
+* link to ~/ and run with `sh defaults.sh`
+
 # Vim
 * ~/.vimrc
