@@ -12,5 +12,8 @@
 # Macos
 * link to ~/ and run with `sh defaults.sh`
 
+# ZSH
+* ~/.zshrc
+
 # Vim
 * ~/.vimrc
