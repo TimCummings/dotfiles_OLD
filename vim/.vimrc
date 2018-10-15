@@ -90,3 +90,7 @@ set clipboard=unnamed
 
 " Exclude line numbers when selecting/copying
 " se mouse+=a
+
+" open new split panes to right and bottom
+set splitbelow
+set splitright
