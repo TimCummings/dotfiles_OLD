@@ -75,6 +75,9 @@ source $ZSH/oh-my-zsh.sh
 # don't "logout" (close window) with CTRL+D
 setopt IGNORE_EOF
 
+# shorten escape timeout
+KEYTIMEOUT=1
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
