@@ -30,3 +30,8 @@
     + Git
     + RVM
     + Ruby
+
+
+
+  - Homebrew
+    + wget
