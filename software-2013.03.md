@@ -34,4 +34,5 @@
 
 
   - Homebrew
+    + grip (required for Vim Markdown Preview)
     + wget
