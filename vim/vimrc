@@ -76,6 +76,9 @@ set relativenumber
 " always show cursor position
 " set ruler
 
+" highlight current cursor line
+set cursorline
+
 " (Hopefully) removes the delay when hitting esc in insert mode
 set noesckeys
 set ttimeout
@@ -94,3 +97,6 @@ set clipboard=unnamed
 " open new split panes to right and bottom
 set splitbelow
 set splitright
+
+" disable automatic multi-line comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
