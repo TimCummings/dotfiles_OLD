@@ -15,6 +15,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " ============================================================
