@@ -34,6 +34,7 @@
 
 
   - Homebrew
+    + ag (listed as the-silver-searcher: faster recursive search)
     + fzf (fuzzy file finder)
     + grip (required for Vim Markdown Preview)
     + heroku
