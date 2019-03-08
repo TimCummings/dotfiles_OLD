@@ -34,5 +34,10 @@
 
 
   - Homebrew
+    + fzf (fuzzy file finder)
     + grip (required for Vim Markdown Preview)
+    + heroku
+    + httpie (command line HTTP client)
+    + readline (library for command-line editing)
+    + tmux
     + wget
