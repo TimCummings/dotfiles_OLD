@@ -102,6 +102,7 @@ KEYTIMEOUT=1
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vzf='vim $(fzf)'
 
 # default fzf options
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
