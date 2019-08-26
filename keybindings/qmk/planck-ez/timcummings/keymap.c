@@ -40,6 +40,13 @@ enum planck_keycodes {
 
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
+#define CTL_ESC LCTL_T(KC_ESC)
+#define GUI_ENT LGUI_T(KC_ENT)
+#define ALT_MIN RALT_T(KC_MINS)
+#define ALT_LFT LALT(KC_LEFT)
+#define ALT_RGT LALT(KC_RGHT)
+#define GUI_LFT LGUI(KC_LEFT)
+#define GUI_RGT LGUI(KC_RGHT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -47,11 +54,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐────────┬────────┬────────┬────────┬────────┬────────┐
      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
- LCTL_T(KC_ESC), KC_A, KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+     CTL_ESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTL, KC_HYPR ,KC_LALT, LGUI_T(KC_ENT), LOWER, KC_SPC, KC_SPC, RAISE, RALT_T(KC_MINS), KC_MEH, KC_F3, KC_RSFT
+     KC_LCTL, KC_HYPR ,KC_LALT, GUI_ENT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   ALT_MIN, KC_MEH,  KC_F3,   KC_RSFT
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘────────┴────────┴────────┴────────┴────────┘
 ),
 
@@ -105,11 +112,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_RAISE] = LAYOUT_planck_grid(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐────────┬────────┬────────┬────────┬────────┬────────┐
-     _______, _______, LALT(KC_RGHT), LALT(KC_RGHT), _______, _______, _______, _______, _______, _______, _______, _______,
+     _______, _______, ALT_RGT, ALT_RGT, _______, _______, _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, LGUI(KC_RGHT), _______, LGUI(KC_LEFT),  _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,
+     _______, _______, GUI_RGT, _______, GUI_LFT, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, _______, KC_DEL,  _______, _______, LALT(KC_LEFT), _______, _______, KC_VOLD, KC_VOLU, KC_MUTE, _______,
+     _______, _______, KC_DEL,  _______, _______, ALT_LFT, _______, _______, KC_VOLD, KC_VOLU, KC_MUTE, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤────────┼────────┼────────┼────────┼────────┼────────┤
      _______, _______, _______, _______, _______, _______, _______, _______, KC_MRWD, KC_MFFD, KC_MPLY, _______ 
   //└────────┴────────┴────────┴────────┴────────┴────────┴────────┘────────┴────────┴────────┴────────┴────────┘
