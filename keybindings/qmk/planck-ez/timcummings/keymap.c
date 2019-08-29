@@ -40,19 +40,21 @@ enum planck_keycodes {
 
 // Tap Dance Declarations
 enum {
-  TD_GUI_ENT = 0
+  TD_CTL_ESC = 0,
+  TD_GUI_ENT
 };
 
 // Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
   // Tap once for GUI, twice for Enter
-  [TD_GUI_ENT] = ACTION_TAP_DANCE_DOUBLE(KC_LGUI, KC_ENT)
+  [TD_GUI_ENT] = ACTION_TAP_DANCE_DOUBLE(KC_LGUI, KC_ENT),
+  [TD_CTL_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC)
   // other declarations would go here, separated by commas, if you have them
 };
 
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
-#define CTL_ESC LCTL_T(KC_ESC)
+#define CTL_ESC TD(TD_CTL_ESC)
 #define GUI_ENT TD(TD_GUI_ENT)
 #define ALT_MIN RALT_T(KC_MINS)
 #define ALT_LFT LALT(KC_LEFT)
