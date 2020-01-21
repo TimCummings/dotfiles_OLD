@@ -111,3 +111,8 @@ set splitright
 
 " disable automatic multi-line comments
 " autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" display hidden characters
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:·,nbsp:~
+set list
+set showbreak=^
