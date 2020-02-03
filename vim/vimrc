@@ -65,6 +65,8 @@ set termguicolors
 syntax on
 set background=dark
 colorscheme onedark
+" tweak background color
+highlight Normal guibg=#1f2228
 
 " ============================================================
 " Other Settings
