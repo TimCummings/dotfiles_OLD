@@ -10,6 +10,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -679,7 +681,11 @@
 	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles/terminal</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -725,17 +731,17 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 133 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 488 620 392 0 0 1680 1027 </string>
+	<string>650 371 700 622 0 0 1920 1177 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1949 126 606 469 1680 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>2227 523 796 486 1680 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1680 0 2560 1417 1680 0 2560 1417 </string>
+	<string>1920 -122 2560 1417 1920 -122 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1920 -73 1920 1177 -1920 -73 1920 1177 </string>
+	<string>2633 547 585 475 1920 -122 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1680 0 2557 1417 1680 0 2560 1417 </string>
+	<string>0 50 1680 977 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>-1920 628 586 476 -1920 -73 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -897,12 +903,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15356595814228058</real>
+				<real>0.15686274509803921</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12867720425128937</real>
+				<real>0.13333333333333333</real>
 				<key>Red Component</key>
-				<real>0.1178457960486412</real>
+				<real>0.12156862745098039</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -3373,17 +3383,33 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
-		<string>3.2.9</string>
+		<string>3.3.6</string>
+		<string>3.3.8</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
+		<string>3.3.3</string>
+		<string>3.3.7</string>
 		<string>3.3.0</string>
+		<string>3.2.9</string>
+		<string>3.3.2</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Monaco</string>
+	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{-1920, -73}, {1920, 1200}}</string>
+		<key>topLeft</key>
+		<string>{-1263, 939}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1680, 0}, {2560, 1440}}</string>
+		<string>{{1920, -122}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1867, 825}</string>
+		<string>{2215, 796}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -3392,7 +3418,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>55FE31A3-F46F-44C4-B5E5-CBC824BCA6D0</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>91</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3906,9 +3932,25 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -4101,6 +4143,11 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
+	<dict>
+		<key>Initial Directory</key>
+		<string>/Users/tjc/dotfiles/terminal</string>
+	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>558644000.86168599</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -4155,7 +4202,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-26T02:24:57Z</date>
+	<date>2020-02-04T04:53:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4181,7 +4228,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.2</string>
+	<string>3.3.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
