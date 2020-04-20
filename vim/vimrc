@@ -12,6 +12,8 @@ endif
 
 call plug#begin()
 Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
@@ -57,7 +59,7 @@ endif
 " enable syntax highlighting
 syntax on
 set background=dark
-colorscheme onedark
+colorscheme nord
 " tweak background color
 highlight Normal guibg=#1f2228
 
