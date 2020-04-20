@@ -113,6 +113,6 @@ set splitright
 " autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " display hidden characters
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:·,nbsp:~
+set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:~
 set list
 set showbreak=^
