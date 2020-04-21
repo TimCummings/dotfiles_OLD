@@ -10,7 +10,7 @@
   * Anonymous Pro
 
 * fun
-  * Inconsolata
+  * Inconsolata (~ look like -)
   * ProFont
 
 * maybes
