@@ -99,6 +99,7 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vzf='nvim $(fzf)'
+alias ls='ls -G'
 
 # default fzf options
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
