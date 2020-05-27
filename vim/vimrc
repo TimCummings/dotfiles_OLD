@@ -119,3 +119,6 @@ set splitright
 set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:~
 set list
 set showbreak=^
+
+set ignorecase
+set smartcase
