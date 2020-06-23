@@ -36,6 +36,12 @@
   * Repeat Keys
 
 
+## Keybindings
+
+* toggle maiximization state: Super + z
+* Move window to workspace n: Shift + Super + n
+* Move to workspace n: Ctrl + Super + n
+
 ## Bugs to Fix
 
 * won't wake after suspend; fix with `sudo kernelstub -a "nomodeset"`
