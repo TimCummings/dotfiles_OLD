@@ -1,8 +1,47 @@
 # Notes and Observations from Installing Pop!_OS
 
 
-### Drivers
-The wifi driver is not included by default. Have the most up-to-date version downloaded onto a thumbdrive* and ready to install. At the time of this note, this driver can be found here: [https://pkgs.org/download/bcmwl-kernel-source]
+## Things to Install
+
+
+### Packages
+
+`xargs -a packages.txt sudo apt-get install`
+
+
+### Other
+
+* [Source Code Pro font](https://fonts.google.com/specimen/Source+Code+Pro)
+  * extract to `/usr/share/fonts/opentype/source-code-pro/`
+
+* install Gnome Tweaks and set:
+  * Miscellaneous compatibility options
+    * Both Shift together enable Caps Lock
+  * Layout of numeric keypad (to properly produce QMK numpad codes in terminal)
+    * Unicode additions (arrows and math operators; math operators on default level)
+
+* Gnome Shell Extensions browser extension
+* PDFMod - good for light PDF adjusting, similar to Preview
+
+* Logitech mouse driver (middle click and side buttons don't work)
+  * backend/service: https://github.com/libratbag/libratbag
+  * GUI: https://github.com/libratbag/piper/
+
+
+## Settings to change
+
+* increase key repeat speed
+  * Settings
+  * Universal Access
+  * Repeat Keys
+
+
+## Bugs to Fix
+
+* won't wake after suspend; fix with `sudo kernelstub -a "nomodeset"`
+
+
+## Old:
 
 *Thumbdrive format cannot be `exFAT`; Pop!_OS does not provide `exFAT` reading functionality by default due to patent/rights issues.
 
