@@ -121,4 +121,9 @@ fi
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+if [[ $OSTYPE == darwin* ]]; then
+  # MacOS
+  export PATH="$PATH:$HOME/.rvm/bin"
+elif [[ $OSTYPE == linux* ]]; then
+  source "/etc/profile.d/rvm.sh"
+fi
