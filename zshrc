@@ -72,7 +72,14 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
 )
 
+
 source $ZSH/oh-my-zsh.sh
+
+# in pop_os, oh-my-zsh theme sets colors that are slightly off
+if [[ $OSTYPE == linux* ]]; then
+  export LSCOLORS=""
+  export LS_COLORS=""
+fi
 
 # User configuration
 
