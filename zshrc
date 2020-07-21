@@ -112,7 +112,10 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vzf='nvim $(fzf)'
-alias ls='ls -G'
+if [[ $OSTYPE == darwin* ]]; then
+  # MacOS
+  alias ls='ls -G'
+fi
 
 # default fzf options
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
