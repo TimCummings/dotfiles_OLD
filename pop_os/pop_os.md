@@ -11,6 +11,8 @@
 
 ### Other
 
+* [dotfiles](https://github.com/TimCummings/dotfiles)
+* ssh keys
 * [Source Code Pro font](https://fonts.google.com/specimen/Source+Code+Pro)
   * extract to `/usr/share/fonts/opentype/source-code-pro/`
 
@@ -21,12 +23,22 @@
     * Unicode additions (arrows and math operators; math operators on default level)
 
 * Gnome Shell Extensions browser extension
-* PDFMod - good for light PDF adjusting, similar to Preview
 
 * Logitech mouse driver (middle click and side buttons don't work)
   * backend/service: https://github.com/libratbag/libratbag
   * GUI: https://github.com/libratbag/piper/
 
+* Spotify
+
+* Discord?
+* GIMP?
+* Malwarebytes?
+* Navicat?
+* Postman?
+* QMK Toolbox?
+* Skype?
+* Veracrypt?
+* Zoom?
 
 ## Settings to change
 
@@ -40,7 +52,13 @@
 
 * toggle maiximization state: Super + z
 * Move window to workspace n: Shift + Super + n
-* Move to workspace n: Ctrl + Super + n
+* Switch to workspace n: Super + n
+* Next track: AudioForward (from QMK)
+* Previous track: Audio rewind (from QMK)
+
+### [dconf](https://askubuntu.com/questions/22313/what-is-dconf-what-is-its-function-and-how-do-i-use-it) changes
+* org.gnome.shell.keybindings
+  * switch-to-application-1..9 (set to empty array [])
 
 ## Bugs to Fix
 

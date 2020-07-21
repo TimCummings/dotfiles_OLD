@@ -1,3 +1,14 @@
-gnome-tweak-tool
+ag
+alacritty
+anki
+dconf-editor
+fzf
+gnome-tweaks
 neovim
 nnn
+pdfmod
+slack-desktop
+steam
+tmux
+tree
+zsh
