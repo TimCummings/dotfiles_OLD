@@ -97,6 +97,9 @@ export LANG=en_US.UTF-8
 # Preferred editor
 export EDITOR='nvim'
 
+# default fzf options
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -116,9 +119,6 @@ if [[ $OSTYPE == darwin* ]]; then
   # MacOS
   alias ls='ls -G'
 fi
-
-# default fzf options
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 if [[ $OSTYPE == darwin* ]]; then
