@@ -9,6 +9,7 @@ nnn
 pdfmod
 slack-desktop
 steam
+tldr
 tmux
 tree
 zsh
