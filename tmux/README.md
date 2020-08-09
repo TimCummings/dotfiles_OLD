@@ -9,6 +9,8 @@ ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 ### Add Italics Font Support
 
+None of this may be necessary any longer (with Alacritty on Linux.)
+
 * References:
   * https://github.com/tmux/tmux/blob/2.1/FAQ#L355-L383
   * https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/
