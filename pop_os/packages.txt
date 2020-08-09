@@ -1,4 +1,4 @@
-ag
+silversearcher-ag
 alacritty
 anki
 dconf-editor
