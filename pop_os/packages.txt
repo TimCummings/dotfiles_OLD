@@ -11,5 +11,6 @@ slack-desktop
 steam
 tldr
 tmux
+traceroute
 tree
 zsh
