@@ -67,6 +67,15 @@ colorscheme nord
 " highlight Normal guibg=#1f2228
 
 " ============================================================
+" Leader Key Mappings
+" ============================================================
+
+" yank to system clipboard (Linux)
+map <Leader>y "+y
+" turn off highlighting
+map <Leader>h :noh<CR>
+
+" ============================================================
 " Other Settings
 " ============================================================
 
