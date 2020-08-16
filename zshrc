@@ -120,6 +120,19 @@ if [[ $OSTYPE == darwin* ]]; then
   alias ls='ls -G'
 fi
 
+# git
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit -v'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gf='git fetch'
+alias gl='git log'
+alias gsh='git show'
+alias gst='git status'
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 if [[ $OSTYPE == darwin* ]]; then
   # MacOS
