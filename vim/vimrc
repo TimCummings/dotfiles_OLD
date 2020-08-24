@@ -74,6 +74,8 @@ colorscheme nord
 map <Leader>y "+y
 " turn off highlighting
 map <Leader>h :noh<CR>
+" simple snippets
+map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
 
 " ============================================================
 " Other Settings
