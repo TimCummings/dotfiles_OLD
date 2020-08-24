@@ -1,13 +1,10 @@
 # Notes and Observations from Installing Pop!_OS
 
-
 ## Things to Install
-
 
 ### Packages
 
 `xargs -a packages.txt sudo apt-get install`
-
 
 ### Other
 
@@ -47,7 +44,6 @@
   * Universal Access
   * Repeat Keys
 
-
 ## Keybindings
 
 * toggle maiximization state: Super + z
@@ -64,11 +60,9 @@
 
 * won't wake after suspend; fix with `sudo kernelstub -a "nomodeset"`
 
-
 ## Old:
 
 *Thumbdrive format cannot be `exFAT`; Pop!_OS does not provide `exFAT` reading functionality by default due to patent/rights issues.
-
 
 ### Display
 
