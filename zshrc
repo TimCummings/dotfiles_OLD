@@ -124,6 +124,7 @@ fi
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
+alias gbc='git branch | cat'
 alias gc='git commit -v'
 alias gco='git checkout'
 alias gd='git diff'
