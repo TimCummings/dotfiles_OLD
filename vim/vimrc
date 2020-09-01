@@ -67,6 +67,19 @@ colorscheme nord
 " highlight Normal guibg=#1f2228
 
 " ============================================================
+" Functions
+" ============================================================
+
+" simply returning from file explorer
+function! OpenExplorer()
+  try
+    :Rex
+  catch
+    :Ex
+  endtry
+endfunction
+
+" ============================================================
 " Leader Key Mappings
 " ============================================================
 
@@ -75,7 +88,7 @@ map <Leader>y "+y
 " turn off highlighting
 map <Leader>h :noh<CR>
 " file explorer
-map <Leader>e :Ex<CR>
+map <Leader>e :call OpenExplorer()<CR>
 " simple snippets
   " HTML
   map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
