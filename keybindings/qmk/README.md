@@ -17,7 +17,19 @@ Requires:
 * QMK Firmware env be setup
 
 
-Usage:
+NEW Usage (Linux):
+* ASSUMES `qmk` has been installed!!
+* Symlink keymap directories from dotfiles:
+  * `ln -s ~/dotfiles/keybindings/qmk/nyquist-r3/tjc ~/qmkfirmware/keyboards/keebio/nyquist/keymaps/tjc`
+  * `ln -s ~/dotfiles/keybindings/qmk/planck/tjc ~/qmkfirmware/keyboards/planck/keymaps/tjc`
+* Go to the root `qmk_firmware` directory.
+* Build and flash via `dfu`:
+  * `make planck/rev6:tjc:dfu-util`
+  * `make keebio/nyquist/rev3:tjc:dfu`
+
+---
+
+OLD Usage (MacOS):
 * Create a layout directory in your keyboard's keymap directory, e.g. `mkdir ~/qmk_firmware/keyboards/keebio/iris/keymap/tjc`.
 * Copy files (`config.h`, `keymap.c`, `rules,mk`) from the keyboard's default layout directory for a good starting point.
 * Edit the `keymap.c` file to your liking.
