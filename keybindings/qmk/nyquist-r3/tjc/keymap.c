@@ -40,6 +40,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define CTL_ESC TD(TD_CTL_ESC)
 #define GUI_ENT TD(TD_GUI_ENT)
 #define ALT_MIN RALT_T(KC_MINS)
+#define CTL_LFT LCTL(KC_LEFT)
+#define CTL_RGT LCTL(KC_RGHT)
 #define ALT_LFT LALT(KC_LEFT)
 #define ALT_RGT LALT(KC_RGHT)
 #define GUI_LFT LGUI(KC_LEFT)
@@ -131,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_COMM, KC_0,    _______, _______, _______, _______, _______, _______, _______, _______, _______ \
 ),
 
-/* Raise
+/* Raise (Linux, maybe Windows too?)
  * ,-----------------------------------------------------------------------------------.
  * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -146,11 +148,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT( \
   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______, _______, ALT_RGT, ALT_RGT, _______, _______, _______, _______, _______, _______, _______, _______, \
-  _______, KC_MINS, GUI_RGT, _______, GUI_LFT, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,S(KC_MINS),_______, \
-  _______, _______, KC_DEL,  _______, _______, ALT_LFT, _______, _______, KC_MRWD, KC_MFFD, KC_MPLY, _______, \
+  _______, _______, CTL_RGT, CTL_RGT, _______, _______, _______, KC_PGUP, _______, _______, KC_PSCR, _______, \
+  _______, KC_MINS, KC_END, KC_PGDN, KC_HOME, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,S(KC_MINS),_______, \
+  _______, _______, KC_DEL,  _______, _______, CTL_LFT, _______, _______, KC_MRWD, KC_MFFD, KC_MPLY, _______, \
   _______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, KC_MUTE, _______ \
 ),
+
+// MacOS
+/* [_RAISE] = LAYOUT( \ */
+/*   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \ */
+/*   _______, _______, ALT_RGT, ALT_RGT, _______, _______, _______, _______, _______, _______, _______, _______, \ */
+/*   _______, KC_MINS, GUI_RGT, _______, GUI_LFT, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,S(KC_MINS),_______, \ */
+/*   _______, _______, KC_DEL,  _______, _______, ALT_LFT, _______, _______, KC_MRWD, KC_MFFD, KC_MPLY, _______, \ */
+/*   _______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, KC_MUTE, _______ \ */
+/* ), */
 
 /* Adjust (Lower + Raise) */
 [_ADJUST] =  LAYOUT( \
