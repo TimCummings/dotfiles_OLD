@@ -74,8 +74,15 @@ colorscheme nord
 map <Leader>y "+y
 " turn off highlighting
 map <Leader>h :noh<CR>
+" file explorer
+map <Leader>e :Ex<CR>
 " simple snippets
-map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
+  " HTML
+  map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
+  " PEDAC (markdown)
+  map <Leader>spm :r ~/dotfiles/vim/snippets/pedac.md<CR>
+  " PEDAC (ruby)
+  map <Leader>spr :r ~/dotfiles/vim/snippets/pedac.rb<CR>
 
 " ============================================================
 " Other Settings
