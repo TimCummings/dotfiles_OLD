@@ -21,11 +21,17 @@ Plug 'tpope/vim-commentary'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'dense-analysis/ale'
 call plug#end()
 
 " ============================================================
 " Plugin-Specific Settings
 " ============================================================
+
+" ALE: go to next error
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" ALE: go to previous error
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 
 " ============================================================
 " Color Scheme Settings
