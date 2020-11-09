@@ -17,3 +17,5 @@
 
 # Vim
 * ~/.vimrc
+* ~/.vim/ftplugin/javascript.vim
+* ~/dotfiles/vim/eslintrc.yml -> base projects directory
