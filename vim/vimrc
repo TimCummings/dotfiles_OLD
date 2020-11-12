@@ -28,10 +28,15 @@ call plug#end()
 " Plugin-Specific Settings
 " ============================================================
 
-" ALE: go to next error
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-" ALE: go to previous error
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+" ALE:
+  " go to next error
+  nmap <silent> <C-j> <Plug>(ale_next_wrap)
+  " go to previous error
+  nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+  " lint on leaving insert mode and saving files; no other times
+  let g:ale_lint_on_text_changed = 'never'
+  let g:ale_lint_on_enter = 0
+
 
 " ============================================================
 " Color Scheme Settings
