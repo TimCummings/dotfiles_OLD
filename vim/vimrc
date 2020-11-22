@@ -105,10 +105,12 @@ map <Leader>e :call OpenExplorer()<CR>
 " simple snippets
   " HTML
   map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
-  " PEDAC (markdown)
-  map <Leader>spm :r ~/dotfiles/vim/snippets/pedac.md<CR>
-  " PEDAC (ruby)
-  map <Leader>spr :r ~/dotfiles/vim/snippets/pedac.rb<CR>
+  " PEDAC
+  map <Leader>sp :r ~/dotfiles/vim/snippets/pedac.md<CR>
+  " Markdown Solution Block (generic)
+  map <Leader>ss :r ~/dotfiles/vim/snippets/markdown_solution.md<CR>
+  " Markdown Solution Block (javascript)
+  map <Leader>ssj :r ~/dotfiles/vim/snippets/markdown_javascript_solution.md<CR>
 
 " ============================================================
 " Other Settings
