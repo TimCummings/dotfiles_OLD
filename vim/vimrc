@@ -12,6 +12,7 @@ endif
 
 call plug#begin()
 Plug 'joshdick/onedark.vim'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
@@ -70,8 +71,13 @@ endif
 " enable syntax highlighting
 syntax on
 set background=dark
+" let g:lightline = {
+"       \ 'colorscheme': 'nord',
+"       \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+"       \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+"       \ }
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'challenger_deep',
       \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
       \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
       \ }
