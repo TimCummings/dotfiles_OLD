@@ -40,7 +40,6 @@ enum planck_keycodes {
 
 // Tap Dance Declarations
 enum {
-  TD_CTL_ESC = 0,
   TD_GUI_ENT
 };
 
@@ -48,21 +47,20 @@ enum {
 qk_tap_dance_action_t tap_dance_actions[] = {
   // Tap once for GUI, twice for Enter
   [TD_GUI_ENT] = ACTION_TAP_DANCE_DOUBLE(KC_LGUI, KC_ENT),
-  [TD_CTL_ESC] = ACTION_TAP_DANCE_DOUBLE(KC_LCTL, KC_ESC)
   // other declarations would go here, separated by commas, if you have them
 };
 
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
-#define CTL_ESC TD(TD_CTL_ESC)
 #define GUI_ENT TD(TD_GUI_ENT)
-#define ALT_MIN RALT_T(KC_MINS)
 #define CTL_LFT LCTL(KC_LEFT)
 #define CTL_RGT LCTL(KC_RGHT)
-#define ALT_LFT LALT(KC_LEFT)
-#define ALT_RGT LALT(KC_RGHT)
-#define GUI_LFT LGUI(KC_LEFT)
-#define GUI_RGT LGUI(KC_RGHT)
+/* MacOS specific */
+/* #define ALT_MIN RALT_T(KC_MINS) */
+/* #define ALT_LFT LALT(KC_LEFT) */
+/* #define ALT_RGT LALT(KC_RGHT) */
+/* #define GUI_LFT LGUI(KC_LEFT) */
+/* #define GUI_RGT LGUI(KC_RGHT) */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
