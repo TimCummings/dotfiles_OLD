@@ -119,6 +119,13 @@ map <Leader>e :call OpenExplorer()<CR>
   map <Leader>ssj :r ~/dotfiles/vim/snippets/markdown_javascript_solution.md<CR>
 
 " ============================================================
+" Autocommands
+" ============================================================
+
+autocmd! FileType javascript nnoremap <leader>r :!node %:p<CR>
+autocmd! FileType ruby nnoremap <leader>r :!ruby %:p<CR>
+
+" ============================================================
 " Other Settings
 " ============================================================
 
