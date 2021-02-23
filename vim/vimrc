@@ -25,6 +25,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dense-analysis/ale'
 Plug 'ap/vim-css-color'
+Plug 'steven-liou/console-puts'  " Toggle print functions on and off
 call plug#end()
 
 " ============================================================
