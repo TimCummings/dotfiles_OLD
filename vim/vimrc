@@ -108,12 +108,21 @@ function! OpenExplorer()
   endtry
 endfunction
 
+" yank full path of current file/directory to system clipboard (Linux)
+function! YankFullPath()
+  redir @+>
+  echo expand('%:p')
+  redir END
+endfunction
+
 " ============================================================
 " Leader Key Mappings
 " ============================================================
 
 " yank to system clipboard (Linux)
 map <Leader>y "+y
+" yank full path of current file/directory to system clipboard (Linux)
+map <Leader>. :call YankFullPath()<CR>
 " turn off highlighting
 map <Leader>h :noh<CR>
 " file explorer
