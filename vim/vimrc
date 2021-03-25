@@ -42,6 +42,10 @@ call plug#end()
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_lint_on_enter = 0
 
+" FZF:
+  " show border
+let g:fzf_colors =
+  \ { 'border': ['fg', 'Statement'] }
 
 " ============================================================
 " Color Scheme Settings
@@ -114,6 +118,8 @@ map <Leader>y "+y
 map <Leader>h :noh<CR>
 " file explorer
 map <Leader>e :call OpenExplorer()<CR>
+" FZF
+map <Leader>f :FZF<CR>
 " simple snippets
   " HTML
   map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
