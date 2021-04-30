@@ -20,12 +20,14 @@ Requires:
 NEW Usage (Linux):
 * ASSUMES `qmk` has been installed!!
 * Symlink keymap directories from dotfiles:
-  * `ln -s ~/dotfiles/keybindings/qmk/nyquist-r3/tjc ~/qmkfirmware/keyboards/keebio/nyquist/keymaps/tjc`
-  * `ln -s ~/dotfiles/keybindings/qmk/planck/tjc ~/qmkfirmware/keyboards/planck/keymaps/tjc`
+  * `ln -s ~/dotfiles/keybindings/qmk/nyquist-r3/tjc ~/qmk_firmware/keyboards/keebio/nyquist/keymaps/tjc`
+  * `ln -s ~/dotfiles/keybindings/qmk/planck/tjc ~/qmk_firmware/keyboards/planck/keymaps/tjc`
+  * `ln -s ~/dotfiles/keybindings/qmk/rebound/tjc ~/qmk_firmware/keyboards/montsinger/rebound/rev4/keymaps/tjc`
 * Go to the root `qmk_firmware` directory.
 * Build and flash via `dfu`:
   * `make planck/rev6:tjc:dfu-util`
   * `make keebio/nyquist/rev3:tjc:dfu`
+  * `make montsinger/rebound/rev4:tjc:dfu`
 
 ---
 
