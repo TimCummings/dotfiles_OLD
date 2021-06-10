@@ -157,6 +157,9 @@ set shiftwidth=2
 set autoindent
 " set smartindent
 
+" keep lines above/below cursor when at the top/bottom of the file
+set scrolloff=5
+
 " make backspace work normally
 set backspace=indent,eol,start
 
