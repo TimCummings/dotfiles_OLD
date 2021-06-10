@@ -8,6 +8,12 @@
 
 ### Other
 
+* `nnn` file manager
+  * For icon support, you have to download a pre-compiled binary or compile it yourself.
+    * Download pre-compiled binary from https://github.com/jarun/nnn/releases (`nnn-nerd-static...` for Nerd Font version.)
+    * Extract binary to `/usr/bin`
+    * Set alias in shell config (should already be done.)
+
 * [dotfiles](https://github.com/TimCummings/dotfiles)
 * ssh keys
 

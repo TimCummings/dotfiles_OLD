@@ -134,6 +134,10 @@ alias gl='git log'
 alias gsh='git show'
 alias gst='git status'
 
+# nnn file manager
+alias nnn='nnn-nerd-static -eo'
+export NNN_TRASH=2
+
 # set GOPATH, disable module-aware mode, and add Go to PATH
 export GOPATH="$HOME/code_projects/go"
 export GO111MODULE=off
