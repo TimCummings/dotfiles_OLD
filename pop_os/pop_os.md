@@ -10,8 +10,6 @@
 
 * [dotfiles](https://github.com/TimCummings/dotfiles)
 * ssh keys
-* [Source Code Pro font](https://fonts.google.com/specimen/Source+Code+Pro)
-  * extract to `/usr/share/fonts/opentype/source-code-pro/`
 
 * install Gnome Tweaks and set:
   * Miscellaneous compatibility options
