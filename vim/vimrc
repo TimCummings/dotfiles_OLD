@@ -140,6 +140,8 @@ map <Leader>h :noh<CR>
 map <Leader>e :call OpenExplorer()<CR>
 " FZF
 map <Leader>f :FZF<CR>
+" toggle relative line numbers
+map <Leader>rl :set rnu!<CR>
 " simple snippets
   " HTML
   map <Leader>shtml :r ~/dotfiles/vim/snippets/skeleton.html<CR>
