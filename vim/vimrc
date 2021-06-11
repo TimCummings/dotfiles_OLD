@@ -17,6 +17,7 @@ Plug 'arcticicestudio/nord-vim'
 " Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
+Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -32,6 +33,10 @@ call plug#end()
 " ============================================================
 " Plugin-Specific Settings
 " ============================================================
+
+" nnn File Manager:
+  let g:nnn#command = 'nnn -eR'
+  let g:nnn#set_default_mappings = 0
 
 " ALE:
   " go to next error
@@ -110,14 +115,15 @@ highlight LineNr guifg=#5e81ac
 " Functions
 " ============================================================
 
+" replaced with nnn; maybe remove later
 " simply returning from file explorer
-function! OpenExplorer()
-  try
-    :Rex
-  catch
-    :Ex
-  endtry
-endfunction
+" function! OpenExplorer()
+"   try
+"     :Rex
+"   catch
+"     :Ex
+"   endtry
+" endfunction
 
 " yank full path of current file/directory to system clipboard (Linux)
 function! YankFullPath()
@@ -137,7 +143,8 @@ map <Leader>. :call YankFullPath()<CR>
 " turn off highlighting
 map <Leader>h :noh<CR>
 " file explorer
-map <Leader>e :call OpenExplorer()<CR>
+" map <Leader>e :call OpenExplorer()<CR>
+map <Leader>e :NnnPicker<CR>
 " FZF
 map <Leader>f :FZF<CR>
 " toggle relative line numbers
