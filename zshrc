@@ -138,6 +138,9 @@ alias gst='git status'
 alias nnn='nnn-nerd-static -eo'
 export NNN_TRASH=2
 
+# add global Yarn to path
+export PATH="$PATH:$(yarn global bin)"
+
 # set GOPATH, disable module-aware mode, and add Go to PATH
 export GOPATH="$HOME/code_projects/go"
 export GO111MODULE=off
