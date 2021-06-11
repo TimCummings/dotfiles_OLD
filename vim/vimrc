@@ -11,10 +11,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'arcticicestudio/nord-vim'
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
@@ -55,8 +55,8 @@ call plug#end()
 
 " FZF:
   " show border
-let g:fzf_colors =
-  \ { 'border': ['fg', 'Statement'] }
+  let g:fzf_colors =
+    \ { 'border': ['fg', 'Statement'] }
 
 " ============================================================
 " Color Scheme Settings
