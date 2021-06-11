@@ -38,6 +38,17 @@ call plug#end()
   nmap <silent> <C-j> <Plug>(ale_next_wrap)
   " go to previous error
   nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+  " define fixers and linters
+  let g:ale_fixers = {
+  \ 'javascript': ['prettier'],
+  \ 'markdown': ['prettier'],
+  \ 'ruby' : ['prettier'],
+  \}
+  let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \}
+  " fix on save
+  let g:ale_fix_on_save = 1
   " lint on leaving insert mode and saving files; no other times
   let g:ale_lint_on_text_changed = 'never'
   let g:ale_lint_on_enter = 0
