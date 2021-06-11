@@ -135,7 +135,7 @@ alias gsh='git show'
 alias gst='git status'
 
 # nnn file manager
-alias nnn='nnn-nerd-static -eo'
+alias nnn='nnn-nerd-static -eR'
 export NNN_TRASH=2
 
 # add global Yarn to path
