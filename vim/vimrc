@@ -35,7 +35,7 @@ call plug#end()
 " ============================================================
 
 " nnn File Manager:
-  let g:nnn#command = 'nnn -eR'
+  let g:nnn#command = 'nnn -eoR'
   let g:nnn#set_default_mappings = 0
 
 " ALE:
