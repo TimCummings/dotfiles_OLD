@@ -12,7 +12,7 @@
   * For icon support, you have to download a pre-compiled binary or compile it yourself.
     * Download pre-compiled binary from https://github.com/jarun/nnn/releases (`nnn-nerd-static...` for Nerd Font version.)
     * Extract binary to `/usr/bin`
-    * Set alias in shell config (should already be done.)
+    * Add symlink that points to this binary: `sudo ln -s /usr/bin/nnn-nerd-static /usr/bin/nnn`.
 
 * [dotfiles](https://github.com/TimCummings/dotfiles)
 * ssh keys
