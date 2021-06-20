@@ -1,15 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-if [[ $OSTYPE == darwin* ]]; then
-  # MacOS
-  export ZSH="/Users/tjc/.oh-my-zsh"
-elif [[ $OSTYPE == linux* ]]; then
-  # Linux
-  export ZSH="/home/tjc/.oh-my-zsh"
-fi
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -72,14 +63,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
 )
 
-
 source $ZSH/oh-my-zsh.sh
-
-# in pop_os, oh-my-zsh theme sets colors that are slightly off
-if [[ $OSTYPE == linux* ]]; then
-  export LSCOLORS=""
-  export LS_COLORS=""
-fi
 
 # User configuration
 
@@ -90,15 +74,6 @@ setopt IGNORE_EOF
 
 # shorten escape timeout
 KEYTIMEOUT=1
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-# Preferred editor
-export EDITOR='nvim'
-
-# default fzf options
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -136,12 +111,3 @@ alias gst='git status'
 
 # nnn file manager
 alias nnn='nnn-nerd-static -eoR'
-export NNN_TRASH=2
-
-# add global Yarn to path
-export PATH="$PATH:$(yarn global bin)"
-
-# set GOPATH, disable module-aware mode, and add Go to PATH
-export GOPATH="$HOME/code_projects/go"
-export GO111MODULE=off
-export PATH="$PATH:/usr/local/go/bin"
