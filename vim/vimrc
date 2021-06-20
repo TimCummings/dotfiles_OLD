@@ -28,6 +28,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dense-analysis/ale'
 Plug 'ap/vim-css-color'
 Plug 'steven-liou/console-puts'  " Toggle print functions on and off
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " ============================================================
@@ -149,7 +150,9 @@ map <Leader>. :call YankFullPath()<CR>
 map <Leader>h :noh<CR>
 " file explorer
 " map <Leader>e :call OpenExplorer()<CR>
-map <Leader>e :NnnPicker<CR>
+map <Leader>e :NERDTreeToggle<CR>
+" nnn file manager
+map <Leader>n :NnnPicker<CR>
 " FZF
 map <Leader>f :FZF<CR>
 " toggle relative line numbers
