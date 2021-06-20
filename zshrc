@@ -145,11 +145,3 @@ export PATH="$PATH:$(yarn global bin)"
 export GOPATH="$HOME/code_projects/go"
 export GO111MODULE=off
 export PATH="$PATH:/usr/local/go/bin"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-if [[ $OSTYPE == darwin* ]]; then
-  # MacOS
-  export PATH="$PATH:$HOME/.rvm/bin"
-elif [[ $OSTYPE == linux* ]]; then
-  source "/etc/profile.d/rvm.sh"
-fi
