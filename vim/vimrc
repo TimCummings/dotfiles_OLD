@@ -185,7 +185,7 @@ set backspace=indent,eol,start
 
 " show absolute and relative line numbers
 set number
-set relativenumber
+" set relativenumber
 
 " always show cursor position
 " set ruler
