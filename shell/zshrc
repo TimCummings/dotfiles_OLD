@@ -61,7 +61,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,3 +111,12 @@ alias gst='git status'
 
 # nnn file manager
 alias nnn='nnn-nerd-static -eoR'
+
+# asdf version manager
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
+# source the main script
+. $ASDF_DIR/asdf.sh
