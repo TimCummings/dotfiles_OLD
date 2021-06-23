@@ -112,6 +112,10 @@ alias gst='git status'
 # nnn file manager
 alias nnn='nnn-nerd-static -eoR'
 
+# something is incorrectly setting LS_COLORS, which makes `ls` output look bad
+# export LS_COLORS="di=34:ln=35:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+export LS_COLORS=""
+
 # asdf version manager
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)

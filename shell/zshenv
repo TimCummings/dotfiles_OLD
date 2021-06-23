@@ -12,12 +12,6 @@ elif [[ $OSTYPE == linux* ]]; then
   export ZSH="/home/tjc/.oh-my-zsh"
 fi
 
-# in pop_os, oh-my-zsh theme sets colors that are slightly off
-if [[ $OSTYPE == linux* ]]; then
-  export LSCOLORS=""
-  export LS_COLORS=""
-fi
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
