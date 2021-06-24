@@ -7,6 +7,10 @@ setopt IGNORE_EOF
 # shorten escape timeout
 KEYTIMEOUT=1
 
+# emacs mode (for ctrl+A, ctrl+E)
+# can still enter vim mode with ctrl+x then ctrl+v
+bindkey -e
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
