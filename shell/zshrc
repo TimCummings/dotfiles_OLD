@@ -44,6 +44,8 @@ autoload -Uz compinit
 compinit
 # source the main script
 . $ASDF_DIR/asdf.sh
+# hook direnv into shell for faster asdf
+eval "$(direnv hook zsh)"
 
 # starship prompt
 eval "$(starship init zsh)"
